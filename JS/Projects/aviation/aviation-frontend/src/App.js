@@ -61,7 +61,7 @@ function Bookings({ token }) {
 
   return (
     <div>
-      <h2>Bookings</h2>
+      <h2>Bookings and or references </h2>
       <button onClick={fetchBookings}>Load Bookings</button>
       <ul>
         {bookings.map((booking) => (

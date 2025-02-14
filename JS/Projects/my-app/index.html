@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mest Woreton Institute - Connect</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">Mest Woreton</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#staff">Staff</a></li>
+      <li><a href="#join">Join Us</a></li>
+      <li><a href="login.html" class="logout-button">Log Out</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1 class="hero-title">Connecting Students and Staff, Seamlessly.</h1>
+      <p class="hero-subtitle">Explore, Engage, and Connect with the Mest Woreton Community.</p>
+      <button class="cta-button" id="explore-button">Explore Staff Profiles</button>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="feature-card">
+      <div class="icon">👩‍🏫</div>
+      <h2>Meet the Staff</h2>
+      <p>Discover the talented educators and staff members shaping your future.</p>
+    </div>
+    <div class="feature-card">
+      <div class="icon">💬</div>
+      <h2>Engage & Interact</h2>
+      <p>Connect with staff through profiles, interests, and contributions.</p>
+    </div>
+    <div class="feature-card">
+      <div class="icon">👍</div>
+      <h2>Show Appreciation</h2>
+      <p>Upvote your favorite staff members to show your gratitude.</p>
+    </div>
+  </section>
+
+  <!-- Add New Staff Form -->
+  <section class="add-staff" id="join">
+    <h2>Join Our Team</h2>
+    <form id="add-staff-form">
+      <input type="text" id="staff-name" placeholder="Full Name" required>
+      <input type="text" id="staff-role" placeholder="Role (e.g., Math Teacher)" required>
+      <textarea id="staff-interests" placeholder="Interests and Contributions" required></textarea>
+      <input type="text" id="staff-image" placeholder="Profile Image URL" required>
+      <button type="submit">Add Staff Member</button>
+    </form>
+  </section>
+
+  <!-- Staff Profiles Section -->
+  <section class="staff-profiles" id="staff">
+    <h2>Meet Our Staff</h2>
+    <div class="profile-grid" id="profile-grid">
+      <!-- Staff profiles will be dynamically added here -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2023 Mest Woreton Institute. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

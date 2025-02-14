@@ -5,10 +5,6 @@ const jwt = require("jsonwebtoken");
 const stripe = require("stripe")("sk_test_4eC39HqLyjWDarjtT1zdp7dc"); // Replace with your Stripe key
 const cors = require("cors");
 
-app.use(cors({
-  origin: "http://localhost:5000",
-}));
-
 
 const app = express();
 app.use(express.json());
